@@ -4,9 +4,19 @@
 			@include media-breakpoint-up(lg) {
 
 				--sPT: #{rem(120)};
+				&--reg{
+					--sPT: #{rem(30)};
+					img{
+						margin-right: rem(-200);
+					}
+
+				}
 			}
 			--sTPB: #{rem(20)};
 		// --sPB: ;
+		&__head{
+			padding-bottom: rem(28);
+		}
 		&__btn{
 			@extend .btn;
 			@extend .btn-primary;
@@ -14,6 +24,9 @@
 			font-size: 1rem;
 			padding: rem(10);
 
+		}
+		h1{
+			@include rfs(30px);
 		}
 		h2{
 				@include media-breakpoint-up(lg){

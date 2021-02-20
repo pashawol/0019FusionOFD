@@ -1,0 +1,55 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sOperators/_sOperators.pug
+include ../blocks/sWhy/_sWhy.pug
+include ../blocks/sPriceBlock/_sPriceBlock.pug
+include ../blocks/sConnecting/_sConnecting.pug
+
+block variables
+	- let  mainPage= null
+	- let  bg= '03.jpg'
+block title
+	- let  title= 'Регистрация'
+	title= title
+block pagecontent
+
+	+mob-mnu()
+	header.header
+		+top-nav()
+	//- +headerBlock()
+	//- +sPriceBlock
+	//- +sConnecting
+	+sWhy2()
+		+e.head.row.g-4
+			.col-auto.pt-2
+				a.link-back(href="#")
+					+icon("arrow-left")
+			.col
+				h1.strong Регистрация
+		+form-wrap
+			.row 
+				.col-sm-6 
+					+input("E-mail",'email','Ваш e-mail')
+				.col-sm-6 
+					+input("Введите фамилию",'text','Фамилия')
+				.col-sm-6 
+					+input("Телефон",'tel','Номер телефона')
+				.col-sm-6 
+					+input("Введите имя",'text','Имя')
+				.col-sm-6 
+					+input("Введите пароль",'password','Пароль')
+				.col-sm-6 
+					+input("Введите пароль",'password','Повторите пароль')
+				.col-sm-6.pb-3 
+					+e.btn(type="submit").w-100 Зарегистрироваться
+				.col-sm-6.pb-3
+					+polite
+			.h6.strong Уже есть аккаунт? #[a(href="#") Войти]
+	//- +sForm()
+	+footer()
+
+
+	

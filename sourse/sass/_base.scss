@@ -476,7 +476,7 @@ iframe {
 
 
 .btn{
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	font-weight: bold;
 	&-primary{
 		color: #fff !important;
@@ -493,5 +493,12 @@ iframe {
 		font-size: 1rem;
 		stroke: currentColor;
 		fill: transparent;
+	}
+}
+
+.btn-outline-primary{
+	&:hover,
+	&.active{
+		color: #fff;
 	}
 }

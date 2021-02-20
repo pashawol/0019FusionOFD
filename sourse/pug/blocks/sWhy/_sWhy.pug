@@ -20,3 +20,13 @@ mixin sWhy(data)
 				+item(`2`,`Коды всегда  в&nbsp;наличии`)
 				+item(`3`,`Автоматическая и&nbsp;моментальная доставка на&nbsp;ваш e-mail`)
 	// end sWhy
+mixin sWhy2(data)
+	// start sWhy
+	+b.SECTION.sWhy--reg.section#sWhy&attributes(attributes)
+		.container
+			+e.row.row 
+				.col
+					block
+				.col-xl-6.col-lg-5.d-none.d-lg-block
+					img(src=`img/svg/reg-img.svg` loading="lazy", alt="")
+	// end sWhy
