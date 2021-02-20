@@ -124,7 +124,7 @@ body {
 .section-title {
 	padding-bottom: var(--sTPB);
 	h2{
-		font-weight: bold;
+		font-weight: 500;
 		line-height: 1.2;
 	}
 }
@@ -485,4 +485,13 @@ iframe {
 .form-check-input:checked[type=checkbox]{
 	background-size: 80%;
 	background-position: center center;
+}
+
+.link-back{
+	color: $body-color;
+	.icon{
+		font-size: 1rem;
+		stroke: currentColor;
+		fill: transparent;
+	}
 }

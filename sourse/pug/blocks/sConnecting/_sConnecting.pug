@@ -1,0 +1,51 @@
+mixin sConnecting(data)
+	// start sConnecting
+	+b.SECTION.sConnecting.section#sConnecting&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Подключение кассы к Платформе ОФД
+				.h5 Эти данные пригодятся во&nbsp;время регистрации кассы в&nbsp;налоговой и&nbsp;настройке связи с&nbsp;Платформой ОФД
+			mixin tr(t1,t2)
+				tr 
+					td= t1
+					td.strong
+						if block 
+							block 
+						else
+							= t2
+			+e.row.row
+				.col-lg-6
+					+e.group
+						+e.group-title Данные для настройки кассы:
+						table
+							+tr("Адрес сервера","ofdp.platformaofd.ru")
+							+tr("IP адрес сервера","185.170.204.91")
+							+tr("Порт","21101")
+							+tr("DNS","8.8.8.8")
+							+tr("Адрес отправки чеков","noreply@platformaofd.ru")
+							+tr("Промо код","")
+								.text-primary 283481001 
+							
+				.col-lg-6
+					+e.group
+						+e.group-title Данные для налоговой:
+						table
+							+tr("Название ","ООО «Эвотор ОФД»")
+							+tr("ИНН","9715260691")
+						.row.align-items-center.g-3.pb-3
+							.col-auto 
+								img(src="img/svg/telemarketer.svg" loading="lazy", alt="")
+							.col
+								+e.group-title Техническая поддержка <br> Платформы ОФД:
+								.h6: a.text-body(href="tel:+74952525050") +7 495 252 50 50
+								.h6: a.text-body(href="mailto:info@platformaofd.ru") info@platformaofd.ru
+			
+			+e.row-foot.row 
+				+e.link.col-md(href="#") 
+					| Регистрация  <br> в&nbsp;платформе ОФД
+				+e.link.col-md(href="#") 
+					| Регистрация без электронной подписи
+
+				+e.link.col-md(href="#") 
+					| Вход в&nbsp;личный кабинет в&nbsp;платформе ОФД
+	// end sConnecting

@@ -13,6 +13,14 @@
 	align-items: center;
 	background-color: var(--nav-bg, #fff);
 	z-index: 200;
+	@include mt;
+	&.fixed{
+		--nav-bg: #fff;
+		box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+		@include media-breakpoint-up(lg) {
+		--t-n-h: #{rem(73)};
+		}
+	}
 	.row{
 		align-items: center;
 		--bs-gutter-x: 20px;

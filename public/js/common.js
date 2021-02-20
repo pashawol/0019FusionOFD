@@ -253,21 +253,25 @@ function eventHandler() {
 
 	var x = window.location.host;
 	var screenName;
-	screenName = 'main.jpg';
+	screenName = '02.jpg';
 
 	if (screenName && x.includes("localhost:30")) {
 		document.body.insertAdjacentHTML("beforeend", "<div class=\"pixel-perfect\" style=\"background-image: url(screen/".concat(screenName, ");\"></div>"));
 	}
 
 	function whenResize() {
-		var topH = document.querySelector("header ").offsetHeight;
+		var topH = document.querySelector(".top-nav").offsetHeight;
 
 		if (topH) {
-			if ($(window).scrollTop() > topH) {
-				document.querySelector('.top-nav  ').classList.add('fixed');
-			} else {
-				document.querySelector('.top-nav  ').classList.remove('fixed');
-			}
+			window.addEventListener('scroll', function (e) {
+				if ($(window).scrollTop() > 0) {
+					document.querySelector('.top-nav  ').classList.add('fixed');
+				} else {
+					document.querySelector('.top-nav  ').classList.remove('fixed');
+				}
+			}, {
+				passive: true
+			});
 		}
 	}
 
@@ -302,6 +306,15 @@ function eventHandler() {
 		slideToClickedSlide: true,
 		freeModeMomentum: true
 	})); // modal window
+
+	function getSizes() {
+		alert("ширина:" + document.documentElement.clientWidth + ", высота:" + document.documentElement.clientHeight);
+	}
+
+	$(".sPriceBlock__btn").click(function (e) {
+		e.preventDefault();
+		getSizes();
+	});
 }
 
 ;

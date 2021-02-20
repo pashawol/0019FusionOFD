@@ -1,0 +1,57 @@
+mixin sPriceBlock(data)
+	// start sPriceBlock
+	+b.SECTION.sPriceBlock.section#sPriceBlock&attributes(attributes)
+		.container
+			+e.inner
+				a.link-back(href="#")
+					+icon("arrow-left")
+				.row
+					+e.col-left.col-lg-auto
+						+e.logo
+							+pic("logo-page.png",'',0)
+						p Код активации — это пароль, который автоматически оплачивает Платформу ОФД на выбранный срок. Оплата кассы по ключу активации происходит мгновенно.
+
+						p Оператор фискальных данных, сокращенно ОФД, принимает чеки с кассы и отправляет их в налоговую. Код активации запускает эту услугу.
+						p: a(href="#") Как активировать код?
+					.col
+
+						+b.section-title
+							h1 Код активации Платформа ОФД
+							p.fw-500 ООО «Эвотор ОФД»
+						mixin radio(t,p, n)
+							.col-auto
+								+b.LABEL.radio-custom
+									input(type="radio" name= n)
+									+e.title= t 
+									+e.price= p
+						+e.group
+							+e.group-title Контракт на:
+							+e.row.row
+								+radio("1 месяц","249 ₽", "n")
+								+radio("3 месяц","599 ₽", "n")
+								+radio("6 месяц","899 ₽", "n")
+								+radio("12 месяц","1 290 ₽", "n")
+								+radio("15 месяц","1 490 ₽", "n")
+								+radio("36 месяц","2 890 ₽", "n")
+						+e.group
+							+e.group-title Учёт маркировки для табака, обуви, шуб и&nbsp;лекарств:
+							+e.row.row
+								+radio("12 месяц","1 800 ₽", "n")
+								+radio("12 месяц","1 990 ₽", "n")
+								+radio("39 месяцев","2 900 ₽", "n")
+						+e.group
+							+e.group-title Количество
+							.row.align-items-center
+								.col
+									+b.block-add 
+										+e.btn--minus
+											+icon("chevron-left")
+										input.form-control(type="text" value="5")
+										+e.btn--plus
+											+icon("chevron-right")
+								.col-auto
+									+e.price 15 600 ₽
+								.col-sm-auto
+									+e.btn(href="#") Купить
+
+	// end sPriceBlock

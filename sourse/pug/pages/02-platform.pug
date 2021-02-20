@@ -1,0 +1,29 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sOperators/_sOperators.pug
+include ../blocks/sWhy/_sWhy.pug
+include ../blocks/sPriceBlock/_sPriceBlock.pug
+include ../blocks/sConnecting/_sConnecting.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'платформа'
+	title= title
+block pagecontent
+
+	+mob-mnu()
+	header.header
+		+top-nav()
+	//- +headerBlock()
+	+sPriceBlock
+	+sConnecting
+	+sWhy()
+	+sForm()
+	+footer()
+
+
+	
