@@ -3,24 +3,23 @@ extends layout/main.pug
 
 include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
+include ../blocks/sOperators/_sOperators.pug
+include ../blocks/sWhy/_sWhy.pug
 
 block variables
-	- let  mainPage= null
+	- let  mainPage= 'main-page'
 block title
 	- let  title= 'title'
 	title= title
 block pagecontent
 
 	+mob-mnu()
-	+header()
-	+top-nav()
-	+soc()
-	+in-c("checkbox", "text")
-
-	+topLine() 
+	header.header
+		+top-nav()
 	+headerBlock()
+	+sOperators()
+	+sWhy()
 	+sForm()
-	+sContact()
 	+footer()
 
 

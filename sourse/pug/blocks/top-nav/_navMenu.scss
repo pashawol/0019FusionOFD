@@ -1,14 +1,27 @@
 .navMenu{
-	display: flex;
 	list-style: none;
-	@include roww(20px);
+	@include media-breakpoint-up(xl){
+		--bs-gutter-x: #{rem(48)};
+	}
+	@include media-breakpoint-up(lg) {
+		
+		display: flex;
+		@include roww(rem(10),m);
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 	position: relative;
-	margin-bottom: 0;
-	max-width: 100%;
-	flex-wrap: wrap;
+	margin-bottom: 0; 
+	font-weight: bold;
+
 	&__link{
 		display: block;
 		text-align: center;
-		padding: rem(20) rem(10);
+		padding: rem(20) 0;
+		color: $body-color;
+		&:hover,
+		&.active{
+			color: $primary;
+		}
 	}
 }

@@ -1,8 +1,14 @@
 .footer {
-		
+		background-color: $dark;
 	margin-top: auto;
+	min-height: 100px;
+	color: #fff;
 
-// 
+		&__link{
+			color: #56CCF2;
+			opacity: 0.8;
+		}
+// 	
 @include media-breakpoint-up(xl) {}
 
 @include media-breakpoint-up(lg) {}

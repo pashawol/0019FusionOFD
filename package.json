@@ -9,9 +9,9 @@
   "author": "Khalunin Pavel",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/preset-env": "^7.12.16",
-    "@popperjs/core": "^2.7.0",
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@popperjs/core": "^2.8.0",
     "animate.css": "^4.1.1",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.2.2",

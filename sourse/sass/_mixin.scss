@@ -1,4 +1,4 @@
-// mixin для Фона
+// mixin for bg
 @mixin bg($src, $media:xy, $path:xy) {
   @if $media==xy {
     @if $path==xy {
@@ -173,14 +173,15 @@
 }
 
 @mixin round($w) {
+  --size: #{$w};
   display: -webkit-inline-flex;
   display: -ms-inline-flex;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: $w;
-  height: $w;
+  width: var(--size);
+  height: var(--size);
 }
 
 // для анимации
@@ -194,9 +195,10 @@
 
 //tear container
 @mixin tear($width) {
+  --w: #{$width};
   position: relative;
-  width: $width;
-  left: calc(-1 * (#{$width} - 100%) / 2);
+  width: var(--w);
+  left: calc(-1 * (var(--w) - 100%) / 2);
 }
 
 @mixin tear-drop() {

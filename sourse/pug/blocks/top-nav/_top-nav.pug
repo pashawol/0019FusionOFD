@@ -12,19 +12,34 @@ mixin mob-mnu()
 		+b.toggle-menu-mobile--js
 			span
 		+e.inner
-		
+
+			a.d-block.text-center.mb-3(href="/")
+				img.res-i(src="img/svg/logo.svg", alt="")
 			+mnu()
-			.text-right
+			.text-center 
+				a.top-nav__tel(href="tel:+79859989988") +7 985 998 99 88
 	//  мобильное меню
 mixin top-nav() 
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
 			.row
+				.col-lg-auto.col
+					a(href="/")
+						img.res-i(src="img/svg/logo.svg", alt="")
+				.col.d-none.d-lg-block
+					
+						+mnu()
+				.col-auto.d-none.d-sm-block 
+					+e.tel(href="tel:+79859989988") +7 985 998 99 88
+				.col-auto 
+					+e.btn(href="#")
+						+icon('user')
+				.col-auto 
+					+e.btn(href="#")
+						+icon('basket')
 				.col-auto.d-lg-none
 					+b.toggle-menu-mobile--js
 						span
-				.col
-					+mnu()
 					
 	// end top-nav

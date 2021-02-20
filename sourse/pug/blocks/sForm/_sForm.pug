@@ -1,9 +1,27 @@
 mixin sForm()
 	// start sForm
-	+b.SECTION.sForm.section#sForm&attributes(attributes)
+	+b.SECTION.sForm.section.bg-dark#sForm&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sForm
+			+b.form-wrap
+				img.after(src="img/svg/form-after.svg"  , alt="")
+				img.before.d-none.d-lg-inline(src="img/svg/form-before.svg"  , alt="")
+				.row
+					.col-auto
+						+b.section-title
+							h2 Остались вопросы?
+							p Оставьте ваши контактные данные и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;течении 12&nbsp;часов
+					.col-lg
+						form
+							.row 
+								.col-sm-6
+									+input('Ваше имя')
+								.col-sm-6
+									+input('E-mail','email')
+								.col-12 
+									+input('Ваш вопрос','textarea')
+								.col-sm-6
+									+e.btn(type="button") Отправить
+								.col-sm-6
+									+polite
 				
-			.row
 	// end sForm

@@ -1,0 +1,22 @@
+mixin sWhy(data)
+	// start sWhy
+	+b.SECTION.sWhy.section#sWhy&attributes(attributes)
+		.container
+			+e.row.row 
+				.col-6.d-none.d-lg-block
+					img(src=`img/svg/why-img.svg` loading="lazy", alt="")
+				.col
+					+b.section-title
+						h2 Почему такие низкие цены?
+						.h6 Мы&nbsp;покупаем коды активации большими партиями и&nbsp;получаем отличные условия. Мы&nbsp;не&nbsp;стремимся за&nbsp;сверхприбылью, а&nbsp;зарабатываем на&nbsp;частоте продаж
+					+e.btn(href="#") Узнать больше
+			+e.row-foot.row
+				mixin item(i,t)
+					+e.col.col-auto
+						+e.img-wrap 
+							img(src=`img/svg/why-${i}.svg` loading="lazy", alt="")
+						p!= t
+				+item(`1`,`Скидки на&nbsp;ОФД до&nbsp;70%`)
+				+item(`2`,`Коды всегда  в&nbsp;наличии`)
+				+item(`3`,`Автоматическая и&nbsp;моментальная доставка на&nbsp;ваш e-mail`)
+	// end sWhy

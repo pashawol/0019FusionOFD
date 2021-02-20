@@ -9,128 +9,481 @@
 		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
 		<link href="css/main.min.css" rel="stylesheet"/>
 	</head>
-	<body> 
+	<body class="main-page"> 
 		<div class="main-wrapper">
 			<div class="menu-mobile menu-mobile--js d-lg-none">
 				<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
 				</div>
-				<div class="menu-mobile__inner">
+				<div class="menu-mobile__inner"><a class="d-block text-center mb-3" href="/"><img class="res-i" src="img/svg/logo.svg" alt=""/></a>
 					<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#sContact" itemprop="url">Главная</a>
+						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">О нас</a>
 						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Услуги  </a>
+						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Коды активации  </a>
 						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Подбор септика   </a>
+						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Оплата и доставка</a>
 						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Акции </a>
-						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> О компании  </a>
-						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Доставка и оплата </a>
-						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Клиентам  </a>
-						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Наши работы   </a>
-						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#sContact" itemprop="url">Контакты </a>
+						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
 						</li>
 					</ul>
-					<div class="text-right"></div>
+					<div class="text-center"> <a class="top-nav__tel" href="tel:+79859989988">+7 985 998 99 88</a></div>
 				</div>
 			</div>
 			<!--  мобильное меню-->
-			<!-- start header-->
-			<header class="header" id="header">
-			</header>
-			<!-- end header-->
-			<!-- start top-nav-->
-			<div class="top-nav block-with-lazy">
-				<div class="container">
-					<div class="row">
-						<div class="col-auto d-lg-none">
-							<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+			<header class="header">
+				<!-- start top-nav-->
+				<div class="top-nav block-with-lazy">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-auto col"><a href="/"><img class="res-i" src="img/svg/logo.svg" alt=""/></a></div>
+							<div class="col d-none d-lg-block">
+								<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">О нас</a>
+									</li>
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Коды активации  </a>
+									</li>
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Оплата и доставка</a>
+									</li>
+									<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-auto d-none d-sm-block"> <a class="top-nav__tel" href="tel:+79859989988">+7 985 998 99 88</a>
+							</div>
+							<div class="col-auto"> <a class="top-nav__btn" href="#">
+								<svg class="icon icon-user ">
+									<use xlink:href="img/svg/sprite.svg#user"></use>
+								</svg></a>
+							</div>
+							<div class="col-auto"> <a class="top-nav__btn" href="#">
+								<svg class="icon icon-basket ">
+									<use xlink:href="img/svg/sprite.svg#basket"></use>
+								</svg></a>
+							</div>
+							<div class="col-auto d-lg-none">
+								<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+								</div>
 							</div>
 						</div>
-						<div class="col">
-							<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#sContact" itemprop="url">Главная</a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Услуги  </a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Подбор септика   </a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Акции </a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> О компании  </a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Доставка и оплата </a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Клиентам  </a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Наши работы   </a>
-								</li>
-								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#sContact" itemprop="url">Контакты </a>
-								</li>
-							</ul>
-						</div>
 					</div>
 				</div>
-			</div>
-			<!-- end top-nav-->
-			<div class="soc"><a class="soc__item" href="#" target="_blank">
-				<svg class="icon icon-fb ">
-					<use xlink:href="img/svg/sprite.svg#fb"></use>
-				</svg></a><a class="soc__item" href="#" target="_blank">
-				<svg class="icon icon-instagram ">
-					<use xlink:href="img/svg/sprite.svg#instagram"></use>
-				</svg></a><a class="soc__item" href="#" target="_blank">
-				<svg class="icon icon-telegram ">
-					<use xlink:href="img/svg/sprite.svg#telegram"></use>
-				</svg></a>
-			</div>
-			<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">text</span>
-			</label>
-			<!-- start topLine-->
-			<section class="topLine section" id="topLine">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>topLine</h2>
-					</div>
-					<div class="row"></div>
-				</div>
-			</section>
-			<!-- end topLine-->
+				<!-- end top-nav-->
+			</header>
 			<!-- start headerBlock-->
-			<div class="headerBlock section" id="headerBlock">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>headerBlock ds dfsdfdsfsd</h2>
-					</div>
-					<div class="row"></div>
+			<div class="headerBlock" id="headerBlock">
+				<div class="container section">
+					<h1>Лучшие цены на ОФД</h1>
+					<p>Тут вы&nbsp;можете приобрести коды активации офд со&nbsp;скидками до&nbsp;70%</p><a class="headerBlock__btn" href="#">Выбрать офд</a><img src="img/svg/head-img.svg" loading="lazy" alt=""/>
 				</div>
 			</div>
 			<!-- end headerBlock-->
-			<!-- start sForm-->
-			<section class="sForm section" id="sForm">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>sForm</h2>
+			<!-- start sOperators-->
+			<section class="sOperators bg-dark section" id="sOperators">
+				<div class="container"><img class="after" loding="lazy" src="img/svg/operator-after.svg" alt=""/><img class="before" loding="lazy" src="img/svg/operator-before.svg" alt=""/>
+					<div class="section-title">
+						<h2>Выберите оператора</h2>
+						<div class="h5">Оператор фискальных данных, сокращенно ОФД, принимает чеки с&nbsp;кассы и&nbsp;передает их&nbsp;в&nbsp;налоговую</div>
 					</div>
-					<div class="row"></div>
+					<div class="row">
+						<div class="sOperators__col col-lg-4 col-md-6">
+							<div class="sOperators__item">
+								<div class="sOperators__img-wrap">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source type="image/webp" srcset="img/@2x/webp/operator-1.webp"/><img src="img/@2x/operator-1.png" alt="" loading="lazy"/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+								</div>
+								<div class="sOperators__foot row">
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">12 месяцев
+										</div>
+										<div class="sOperators__price">1 290 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">15 месяцев
+										</div>
+										<div class="sOperators__price">1 490 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">36 месяцев
+										</div>
+										<div class="sOperators__price">2 890 ₽
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sOperators__col col-lg-4 col-md-6">
+							<div class="sOperators__item">
+								<div class="sOperators__img-wrap">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source type="image/webp" srcset="img/@2x/webp/operator-2.webp"/><img src="img/@2x/operator-2.png" alt="" loading="lazy"/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+								</div>
+								<div class="sOperators__foot row">
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">12 месяцев
+										</div>
+										<div class="sOperators__price">1 290 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">15 месяцев
+										</div>
+										<div class="sOperators__price">1 490 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">36 месяцев
+										</div>
+										<div class="sOperators__price">2 890 ₽
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sOperators__col col-lg-4 col-md-6">
+							<div class="sOperators__item">
+								<div class="sOperators__img-wrap">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source type="image/webp" srcset="img/@2x/webp/operator-3.webp"/><img src="img/@2x/operator-3.png" alt="" loading="lazy"/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+								</div>
+								<div class="sOperators__foot row">
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">12 месяцев
+										</div>
+										<div class="sOperators__price">1 290 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">15 месяцев
+										</div>
+										<div class="sOperators__price">1 490 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">36 месяцев
+										</div>
+										<div class="sOperators__price">2 890 ₽
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sOperators__col col-lg-4 col-md-6">
+							<div class="sOperators__item">
+								<div class="sOperators__img-wrap">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source type="image/webp" srcset="img/@2x/webp/operator-4.webp"/><img src="img/@2x/operator-4.png" alt="" loading="lazy"/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+								</div>
+								<div class="sOperators__foot row">
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">12 месяцев
+										</div>
+										<div class="sOperators__price">1 290 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">15 месяцев
+										</div>
+										<div class="sOperators__price">1 490 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">36 месяцев
+										</div>
+										<div class="sOperators__price">2 890 ₽
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sOperators__col col-lg-4 col-md-6">
+							<div class="sOperators__item">
+								<div class="sOperators__img-wrap">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source type="image/webp" srcset="img/@2x/webp/operator-5.webp"/><img src="img/@2x/operator-5.png" alt="" loading="lazy"/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+								</div>
+								<div class="sOperators__foot row">
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">12 месяцев
+										</div>
+										<div class="sOperators__price">1 290 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">15 месяцев
+										</div>
+										<div class="sOperators__price">1 490 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">36 месяцев
+										</div>
+										<div class="sOperators__price">2 890 ₽
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sOperators__col col-lg-4 col-md-6">
+							<div class="sOperators__item">
+								<div class="sOperators__img-wrap">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source type="image/webp" srcset="img/@2x/webp/operator-6.webp"/><img src="img/@2x/operator-6.png" alt="" loading="lazy"/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+								</div>
+								<div class="sOperators__foot row">
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">12 месяцев
+										</div>
+										<div class="sOperators__price">1 290 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">15 месяцев
+										</div>
+										<div class="sOperators__price">1 490 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">36 месяцев
+										</div>
+										<div class="sOperators__price">2 890 ₽
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sOperators__col col-lg-4 col-md-6">
+							<div class="sOperators__item">
+								<div class="sOperators__img-wrap">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source type="image/webp" srcset="img/@2x/webp/operator-7.webp"/><img src="img/@2x/operator-7.png" alt="" loading="lazy"/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+								</div>
+								<div class="sOperators__foot row">
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">12 месяцев
+										</div>
+										<div class="sOperators__price">1 290 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">15 месяцев
+										</div>
+										<div class="sOperators__price">1 490 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">36 месяцев
+										</div>
+										<div class="sOperators__price">2 890 ₽
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sOperators__col col-lg-4 col-md-6">
+							<div class="sOperators__item">
+								<div class="sOperators__img-wrap">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source type="image/webp" srcset="img/@2x/webp/operator-8.webp"/><img src="img/@2x/operator-8.png" alt="" loading="lazy"/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+								</div>
+								<div class="sOperators__foot row">
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">12 месяцев
+										</div>
+										<div class="sOperators__price">1 290 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">15 месяцев
+										</div>
+										<div class="sOperators__price">1 490 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">36 месяцев
+										</div>
+										<div class="sOperators__price">2 890 ₽
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sOperators__col col-lg-4 col-md-6">
+							<div class="sOperators__item">
+								<div class="sOperators__img-wrap">
+									<!-- picture-->
+									<picture> 
+										<noscript class="loading-lazy">
+											<source type="image/webp" srcset="img/@2x/webp/operator-9.webp"/><img src="img/@2x/operator-9.png" alt="" loading="lazy"/>
+										</noscript>
+									</picture>
+									<!-- /picture-->
+								</div>
+								<div class="sOperators__foot row">
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">12 месяцев
+										</div>
+										<div class="sOperators__price">1 290 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">15 месяцев
+										</div>
+										<div class="sOperators__price">1 490 ₽
+										</div>
+									</div>
+									<div class="sOperators__td col-4">
+										<div class="sOperators__text">36 месяцев
+										</div>
+										<div class="sOperators__price">2 890 ₽
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sOperators-->
+			<!-- start sWhy-->
+			<section class="sWhy section" id="sWhy">
+				<div class="container">
+					<div class="sWhy__row row"> 
+						<div class="col-6 d-none d-lg-block"><img src="img/svg/why-img.svg" loading="lazy" alt=""/></div>
+						<div class="col">
+							<div class="section-title">
+								<h2>Почему такие низкие цены?</h2>
+								<div class="h6">Мы&nbsp;покупаем коды активации большими партиями и&nbsp;получаем отличные условия. Мы&nbsp;не&nbsp;стремимся за&nbsp;сверхприбылью, а&nbsp;зарабатываем на&nbsp;частоте продаж</div>
+							</div><a class="sWhy__btn" href="#">Узнать больше</a>
+						</div>
+					</div>
+					<div class="sWhy__row-foot row">
+						<div class="sWhy__col col-auto">
+							<div class="sWhy__img-wrap"> <img src="img/svg/why-1.svg" loading="lazy" alt=""/>
+							</div>
+							<p>Скидки на&nbsp;ОФД до&nbsp;70%</p>
+						</div>
+						<div class="sWhy__col col-auto">
+							<div class="sWhy__img-wrap"> <img src="img/svg/why-2.svg" loading="lazy" alt=""/>
+							</div>
+							<p>Коды всегда  в&nbsp;наличии</p>
+						</div>
+						<div class="sWhy__col col-auto">
+							<div class="sWhy__img-wrap"> <img src="img/svg/why-3.svg" loading="lazy" alt=""/>
+							</div>
+							<p>Автоматическая и&nbsp;моментальная доставка на&nbsp;ваш e-mail</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sWhy-->
+			<!-- start sForm-->
+			<section class="sForm section bg-dark" id="sForm">
+				<div class="container">
+					<div class="form-wrap"><img class="after" src="img/svg/form-after.svg" alt=""/><img class="before d-none d-lg-inline" src="img/svg/form-before.svg" alt=""/>
+						<div class="row">
+							<div class="col-auto">
+								<div class="section-title">
+									<h2>Остались вопросы?</h2>
+									<p>Оставьте ваши контактные данные и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;течении 12&nbsp;часов</p>
+								</div>
+							</div>
+							<div class="col-lg">
+								<form>
+									<div class="row"> 
+										<div class="col-sm-6">
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="text" type="text" placeholder="Ваше имя"/>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="col-sm-6">
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="email" type="email" placeholder="E-mail"/>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="col-12"> 
+											<div class="form-wrap__input-wrap form-group"><textarea class="form-wrap__input form-control" name="textarea" placeholder="Ваш вопрос"></textarea>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="col-sm-6">
+											<button class="form-wrap__btn" type="button">Отправить
+											</button>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-wrap__polite">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text">Я согласен на <a href="#">обработку моих персональных данных</a></small>
+												</label>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- end sForm-->
-			<!-- start sContact-->
-			<section class="sContact section" id="sContact">
+			<footer class="footer section">
 				<div class="container">
-					<div class="section-title text-center">
-						<h2>sContact</h2>
+					<div class="row"> 
+						<div class="col-md pb-5">
+							<div class="small">© Все права защищены</div>
+							<div class="small">Все товарные знаки сторонних организаций являются собственностью их владельцев</div>
+							<div class="small">ИНН 00000000000, ОГРНИП 0000000000000000</div>
+						</div>
+						<div class="col-auto text-md-end pb-5"><a class="h5 strong text-white" href="tel:+79859989988">+7 985 998 99 88</a><br/><a class="strong text-white" href="mailto:sample@sample.com"> sample@sample.com</a></div>
+						<div class="w-100"></div>
+						<div class="col-md pb-3">
+							<div class="small strong">г. Ростов-на-Дону, ул. Великолунская, д.66</div>
+						</div>
+						<div class="col-auto small pb-2"><a class="footer__link" href="#"> Политика конфиденциальности</a>
+						</div>
+						<div class="col-auto small pb-2"><a class="footer__link" href="#"> Условия обработки данных</a>
+						</div>
 					</div>
-					<div class="row"></div>
 				</div>
-			</section>
-			<!-- end sContact-->
-			<footer class="footer"></footer>
+			</footer>
 		</div>
 		<!--  start modals-->
 		<div class="modal-win" id="modal-call" style="display: none">
@@ -148,7 +501,7 @@
 					<button class="form-wrap__btn btn" type="submit"> 
 					</button>
 					<div class="form-wrap__polite">
-						<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+						<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text">Я согласен на <a href="#">обработку моих персональных данных</a></small>
 						</label>
 					</div>
 				</form>

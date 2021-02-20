@@ -1,2 +1,19 @@
 mixin footer()
-	footer.footer
+	+b.FOOTER.footer.section
+		.container
+			.row 
+				.col-md.pb-5
+					.small © Все права защищены
+					.small Все товарные знаки сторонних организаций являются собственностью их владельцев
+					.small ИНН 00000000000, ОГРНИП 0000000000000000
+				.col-auto.text-md-end.pb-5
+					a.h5(href="tel:+79859989988").strong.text-white +7 985 998 99 88
+					br
+					a.strong(href="mailto:sample@sample.com").text-white  sample@sample.com
+				.w-100
+				.col-md.pb-3
+					.small.strong г. Ростов-на-Дону, ул. Великолунская, д.66
+				.col-auto.small.pb-2
+					+e.link(href="#")  Политика конфиденциальности
+				.col-auto.small.pb-2
+					+e.link(href="#")  Условия обработки данных

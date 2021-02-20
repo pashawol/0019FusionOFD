@@ -1,17 +1,50 @@
 // start .headerBlock
-.headerBlock {
-	margin-bottom: 1px;
-	min-height: 100vh;
-	min-height: calc(var(--vh, 1vh) * 100);
-	// background-image: url(../img);
-	// background-color: #000000;
-
-	h1 {
-		margin-bottom: 1px;
+.headerBlock { 
+	// min-height: calc100vh;
+	min-height: calc(var(--vh, 1vh) * 100 );
+	// height: 810px;
+	position: relative;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	margin-top: calc(-1 * var(--t-n-h));
+	img{
+		z-index: -1;
+		position: absolute;
+		left: 34%;
+		max-height: 120%;
+		@include media-breakpoint-up(lg) {
+			bottom: auto;
+			top: 0;
+			max-width: (1884 / 1920 *100%)
+		}
+		bottom: rem(-20);
+		top: auto;
+		max-width: 100%
+		// max-width: (1284 / 1920 *100%)
 	}
+	h1{
+		@include rfs(60px);
+		@include media-breakpoint-up(sm) {
 
-	h2 {
-		margin-bottom: 1px;
+			margin-bottom: rem(49);
+		}
+		font-weight: bold;
+		margin-top: 1em;
+	}
+	p{
+		max-width: rem(352);
+		@include media-breakpoint-up(sm) {
+
+			margin-bottom: rem(40);
+		}
+		margin-bottom: rem(20);
+		@extend .h5;
+	}
+	&__btn{
+		@extend .btn;
+		@extend .btn-primary;
+		width: rem(260);
 	}
 
 	@include media-breakpoint-up(xl) {}

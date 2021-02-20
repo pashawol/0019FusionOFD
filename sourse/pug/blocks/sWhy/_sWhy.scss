@@ -1,0 +1,59 @@
+
+	// start .sWhy
+	.sWhy {
+			@include media-breakpoint-up(lg) {
+
+				--sPT: #{rem(120)};
+			}
+			--sTPB: #{rem(20)};
+		// --sPB: ;
+		&__btn{
+			@extend .btn;
+			@extend .btn-primary;
+			width: rem(260);
+			font-size: 1rem;
+			padding: rem(10);
+
+		}
+		h2{
+				@include media-breakpoint-up(lg){
+
+					padding-top: rem(40);
+					margin-bottom: rem(20);
+				}
+		}
+		// .section-title{
+
+		// }
+		&__col{
+			max-width: calc(200px + var(--bs-gutter-x));
+			margin-bottom: rem(34);
+			font-weight: bold;
+		}
+		&__row-foot{
+			justify-content: space-around;
+			text-align: center;
+			@extend .h6;
+			padding-top: rem(40);
+			text-align: center;
+		}
+		&__img-wrap{
+			margin-left: auto;
+			margin-right: auto;
+			max-width: rem(155);
+			border-bottom: 2px solid $primary;
+			height: rem(73+ 44);
+			margin-bottom: rem(25);
+		}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sWhy

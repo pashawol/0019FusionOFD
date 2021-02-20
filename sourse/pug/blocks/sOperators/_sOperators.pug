@@ -1,0 +1,26 @@
+mixin sOperators(data)
+	// start sOperators
+	+b.SECTION.sOperators.bg-dark.section#sOperators&attributes(attributes)
+		.container
+			img.after(loding="lazy" src="img/svg/operator-after.svg", alt="")
+			img.before(loding="lazy" src="img/svg/operator-before.svg", alt="")
+			+b.section-title
+				h2 Выберите оператора
+				.h5 Оператор фискальных данных, сокращенно ОФД, принимает чеки с&nbsp;кассы и&nbsp;передает их&nbsp;в&nbsp;налоговую
+			.row
+				- for (var x = 1; x < 10; x++)
+					+e.col.col-lg-4.col-md-6
+						+e.item
+							+e.img-wrap
+								+pic(`operator-${x}.png`,'',0)
+							+e.foot.row
+								+e.td.col-4
+									+e.text 12 месяцев
+									+e.price 1 290 ₽
+								+e.td.col-4
+									+e.text 15 месяцев
+									+e.price 1 490 ₽
+								+e.td.col-4
+									+e.text 36 месяцев
+									+e.price 2 890 ₽
+	// end sOperators
