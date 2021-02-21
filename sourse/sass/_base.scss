@@ -502,3 +502,15 @@ iframe {
 		color: #fff;
 	}
 }
+
+.page-head{
+	padding-top: rem(30);
+	h1{
+		@include rfs(30px);
+	}
+}
+
+.smallest{
+	font-size: 12px;
+}
+

@@ -42,10 +42,10 @@ $blue: #2F80ED !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #d63384 !default;
-$red: #dc3545 !default;
-$orange: #fd7e14 !default;
+$red: #EB5757 !default;
+$orange: #F2994A !default;
 $yellow: #ffc107 !default;
-$green: #198754 !default;
+$green: #219653 !default;
 $teal: #20c997 !default;
 $cyan: #0dcaf0 !default;
 
@@ -66,10 +66,10 @@ $colors: ("blue": $blue,
 // scss-docs-end colors-map
 
 $primary: $blue !default;
-$secondary: $gray-600 !default;
+$secondary: #828282 !default;
 $success: $green !default;
 $info: $cyan !default;
-$warning: $yellow !default;
+$warning: $orange !default;
 $danger: $red !default;
 $light: $gray-100 !default;
 $dark: #275694 !default;
@@ -246,7 +246,7 @@ $border-widths: (0: 0,
 $border-color: $gray-300 !default;
 
 $border-radius: rem(20px) !default;
-$border-radius-sm: .2rem !default;
+$border-radius-sm: rem(5) !default;
 $border-radius-lg: .3rem !default;
 $border-radius-pill: 50rem !default;
 
@@ -327,7 +327,7 @@ $line-height-lg: 2 !default;
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: rem(40) !default;
 $h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
+$h4-font-size: rem(30) !default;
 $h5-font-size: rem(24) !default;
 $h6-font-size: rem(20) !default;
 
@@ -465,7 +465,7 @@ $input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color
 
 $input-btn-padding-y-sm: .25rem !default;
 $input-btn-padding-x-sm: .5rem !default;
-$input-btn-font-size-sm: $font-size-sm !default;
+$input-btn-font-size-sm: 1rem !default;
 
 $input-btn-padding-y-lg: .5rem !default;
 $input-btn-padding-x-lg: 1rem !default;

@@ -1,0 +1,21 @@
+mixin sCabinet(data)
+	// start sCabinet
+	+b.sCabinet.section#sCabinet&attributes(attributes)
+		.container
+			.row
+				.col.pb-5
+					+e.main-block
+						block
+				.col-xl-3
+					+b.aside
+						+e.name Виктор  <br> Валентиновский
+						+e.id ID 45688963
+						+e.group 
+							+e.group-title e-mail
+							+e.link(href="mailto:sample@sample.com") sample@sample.com
+						+e.group 
+							+e.group-title Номер телефона
+							+e.link(href="tel:+79859998888") +7 985 999 8888
+						+e.btn.btn-outline-primary(href='#') Редактировать данные
+						+e.btn.btn-primary(href='#') Изменить пароль
+	// end sCabinet

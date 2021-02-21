@@ -1,0 +1,82 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sOperators/_sOperators.pug
+include ../blocks/sWhy/_sWhy.pug
+include ../blocks/sPriceBlock/_sPriceBlock.pug
+include ../blocks/sConnecting/_sConnecting.pug
+include ../blocks/sCabinet/_sCabinet.pug
+
+block variables
+	- let  mainPage= null
+	- let  bg= null
+block title
+	- let  title= 'Заказы'
+	title= title
+block pagecontent
+
+	+mob-mnu()
+	header.header
+		+top-nav()
+	//- +headerBlock()
+	//- +sPriceBlock
+	//- +sConnecting
+	+b.page-head
+		.container
+			.row.g-4
+				.col-auto.pt-2
+					a.link-back(href="#")
+						+icon("arrow-left")
+				.col
+					h1.strong= title
+	+sCabinet
+		+b.order-block
+			
+						
+			table 
+				thead
+					th.smallest # заказа
+					th.smallest Дата заказа
+					th.smallest Тип оплаты
+					th.smallest.text-md-center Кол-во позиций
+					th.smallest 
+					th.smallest Итого
+				tbody
+					mixin tr(t,c)
+						tr.main-tr
+							td.main-td(data-title="#")
+								.fw-500.text-primary 158896354
+						
+
+							td.main-td.smallest(data-title="Дата заказа")  14.04.2020
+							td.main-td.smallest.strong(data-title="Тип оплаты") По счету  
+							td.main-td.text-md-center(data-title="Кол-во позиций") 3
+							td.main-td.text-md-center
+								.status-pill(style=`--status-bg: ${c}`)= t
+							td.main-td.h6.strong(data-title="Итого") 2 860 ₽
+								+icon("chevron-right")
+						tr
+							td(colspan="6")
+								table
+									- for (var x = 0; x < 3; x++)
+										tr 
+											td 
+												+e.img-wrap
+													+pic('logo-page.png','',0)
+											td
+												strong Код активации Платформа ОФД
+											td.text-md-center(data-title="Кол-во позиций") 2
+											td 
+											td.fw-500(data-title="Цена") 1 559 ₽
+								+e.btn.btn-outline-primary(href="#") Подробнее о заказе
+					+tr("Выполнен",'var(--bs-success)')
+					+tr("Отменен",'var(--bs-danger)')
+					+tr("Выполнен",'var(--bs-success)')
+					+tr("Отменен",'var(--bs-danger)')
+					+tr("Ожидание",'var(--bs-warning)')
+	+footer()
+
+
+	
