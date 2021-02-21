@@ -7,3 +7,4 @@
 5. <https://pashawol.github.io/0019FusionOFD/public/06-orders.html>
 6. <https://pashawol.github.io/0019FusionOFD/public/07-order.html>
 7. <https://pashawol.github.io/0019FusionOFD/public/08-counterparties.html>
+8. <https://pashawol.github.io/0019FusionOFD/public/09-basket.html>

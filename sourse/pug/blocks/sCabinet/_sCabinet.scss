@@ -73,8 +73,12 @@
 		width: rem(174);
 
 	}
-	table{
+	.main-table {
 		width: 100%;
+		border-radius: 30px;
+		box-shadow: 0px 28px 32px -19px rgba(0, 0, 0, 0.18);
+		position: relative;
+		overflow: hidden;
 	}
 	th{
 		font-weight: normal;
@@ -212,7 +216,29 @@
 					width: rem(120);
 				}
 			}
+			&--contr{
+				td,
+				th{
+					width: initial !important;
+					&:nth-child(2){
+
+						width: 40% !important;
+					}
+					&:last-child{
+						width: rem(150) !important;
+					}
+				}
+			}
 		}
+		
+		.form-check {
+			display: inline-block;
+
+			input {
+				margin-left: auto;
+			}
+		}
+
 	@include media-breakpoint-down(md) {
 		th{
 			display: none;

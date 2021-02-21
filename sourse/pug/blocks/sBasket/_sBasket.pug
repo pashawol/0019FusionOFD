@@ -1,0 +1,42 @@
+mixin sBasket(data)
+	// start sBasket
+	+b.sBasket.section#sBasket&attributes(attributes)
+		.container
+			form.row
+				.col.pb-5
+					+e.main-block
+						table
+							- for (var x = 0; x < 3; x++)
+								tr
+									td 
+										+e.img-wrap
+											+pic('logo-page.png','',0)
+									td.fw-500 Код активации Платформа ОФД
+									td
+										.row
+											.col.smallest.text-secondary  Контракт на 1 мес х 3:
+											.col-auto.fw-500 759 ₽
+											.w-100
+											.col.smallest.text-secondary Учет маркировки:
+											.col-auto.fw-500 1 990 ₽
+									td.text-end
+										+e.btn-delete(type="button")
+											+icon("close")
+						+e.polite
+							+in-c()(checked)
+								+e.SMALL.text Нажимая кнопку &laquo;Оформить заказ&raquo; вы&nbsp;соглашаетесь с&nbsp;нашей #[a(href="#") Политикой в&nbsp;отношении обработки персональных данных и&nbsp;Правилами оплаты банковской картой]
+				.col-xl-3
+					+b.form-wrap
+						.small.text-secondary.mb-2 Способ оплаты
+						+in-c('radio','Банковской картой','r')
+						+in-c('radio','По счету','r')
+						.pb-2
+						+input("E-mail",'email','Ваш e-mail')
+						+input("Телефон",'tel','Номер телефона')
+						+input("Введите имя",'text','Имя')
+						+input("_ _ _ _ _ _ _ _ _ _ _",'text','ИНН')
+						.row.align-items-center
+							.col.text-secondary.small.mb-3 Итого:
+							.col-auto.h3.fw-500 15 600 ₽
+						+e.btn(type="submit").w-100 Оформить заказ
+	// end sBasket

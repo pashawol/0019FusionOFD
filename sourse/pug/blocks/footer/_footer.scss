@@ -5,8 +5,11 @@
 	color: #fff;
 
 		&__link{
-			color: #56CCF2;
+			color: #56CCF2 !important;
 			opacity: 0.8;
+			&:hover{
+				opacity: 1;
+			}
 		}
 // 	
 @include media-breakpoint-up(xl) {}

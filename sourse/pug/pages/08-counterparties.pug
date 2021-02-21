@@ -13,7 +13,7 @@ block variables
 	- let  mainPage= null
 	- let  bg= '07.jpg'
 block title
-	- let  title= 'Заказ 158896354 от 14.10.2020'
+	- let  title= 'Контрагенты'
 	title= title
 block pagecontent
 
@@ -32,104 +32,29 @@ block pagecontent
 				.col
 					h1.strong= title
 	+sCabinet
-		+b.order-page 
-			+e.head
-				table 
-					tr
-						td Тип оплаты:
-						td.strong По счету  
-					tr
-						td Кол-во позиций
-						td.strong  3 
-					tr
-						td Статус
-						td.strong   
-							.status-pill(style=`--status-bg: var(--bs-success)`) Выполнен
-					tr
-						td Покупатель
-						td.strong  ООО “Мудаки”
-			+e.body 
-				table
-					- for (var x = 1; x < 3; x++)
-						tr
-							td.strong.small= x
-							td
-								+e.img-wrap
-									+pic('logo-page.png','',0)
-							td
-								.row.pb-2 
-									.col-sm-auto.col
-											strong Код активации Платформа ОФД
-									.col-auto 2 
-								- for (var y = 1; y < 3; y++)
-									.row.smallest.pb-2.gx-3 
-										.col-auto.text-secondary 1.   
-										.col-sm-auto.col.text-secondary   HKJHUI-OUIOJKLJ-KLJKLJLKJ-99
-										.col-sm-auto.pb-1.text-primary
-											a(href="#") Скопировать
-							td.text-md-end.fw-500(data-title="Цена") 1 559 ₽
-					tr
-						td(colspan="3") Итого:
-						td.text-end.fw-500.h6 2 860 ₽
-				.row.g-3 
-					.col-auto 
-						a.aside__btn.btn-primary.px-3.mt-3(href='#') Оплатить онлайн
-					.col-auto 
-						a.aside__btn.btn-primary.px-3.mt-3(href='#') Скачать счет
-			+e.foot.section.pb-0
-				.h5.strong Обращения
-				table
-					- for (var x = 0; x < 3; x++)
-						tr 
-							td(data-title="Номер обращения:")
-								.fw-500 5699885
-							td(data-title="Дата:")
-								.fw-500 30 августа 2020
-							td(data-title="Тема:")
-								.fw-500.text-primary Название темы для некоторых
-							td(data-title="Статус:").text-md-end
-								.status-pill(style=`--status-bg: var(--bs-success)`) Выполнен
-							
-			//- 	thead
-			//- 		th.smallest # заказа
-			//- 		th.smallest Дата заказа
-			//- 		th.smallest Тип оплаты
-			//- 		th.smallest.text-md-center Кол-во позиций
-			//- 		th.smallest 
-			//- 		th.smallest Итого
-			//- 	tbody
-			//- 		mixin tr(t,c)
-			//- 			tr.main-tr
-			//- 				td.main-td(data-title="#")
-			//- 					.fw-500.text-primary 158896354
-						
+		+b.order-block--contr 
+			table.main-table 
+				thead
+					th.smallest ID
+					th.smallest Наименование
+					th.smallest Дата добавления
+					th.smallest.text-md-center Заказы
+					th.smallest.text-md-center По умолчанию
+				tbody
+					mixin tr(t,c)
+						tr.main-tr
+							td.main-td(data-title="ID")
+								.fw-500.text-primary 19852
 
-			//- 				td.main-td.smallest(data-title="Дата заказа")  14.04.2020
-			//- 				td.main-td.smallest.strong(data-title="Тип оплаты") По счету  
-			//- 				td.main-td.text-md-center(data-title="Кол-во позиций") 3
-			//- 				td.main-td.text-md-center
-			//- 					+e.status(style=`--status-bg: ${c}`)= t
-			//- 				td.main-td.h6.strong(data-title="Итого") 2 860 ₽
-			//- 					+icon("chevron-right")
-			//- 			tr
-			//- 				td(colspan="6")
-			//- 					table
-			//- 						- for (var x = 0; x < 3; x++)
-			//- 							tr 
-			//- 								td 
-			//- 									+e.img-wrap
-			//- 										+pic('logo-page.png','',0)
-			//- 								td
-			//- 									strong Код активации Платформа ОФД
-			//- 								td.text-md-center(data-title="Кол-во позиций") 2
-			//- 								td 
-			//- 								td.fw-500(data-title="Цена") 1 559 ₽
-			//- 					+e.btn.btn-outline-primary(href="#") Подробнее о заказе
-			//- 		+tr("Выполнен",'var(--bs-success)')
-			//- 		+tr("Отменен",'var(--bs-danger)')
-			//- 		+tr("Выполнен",'var(--bs-success)')
-			//- 		+tr("Отменен",'var(--bs-danger)')
-			//- 		+tr("Ожидание",'var(--bs-warning)')
+
+							td.main-td(data-title="Наименование")  ООО “Мудаки”
+							td.main-td.strong(data-title="Дата добавления") 05.03.2018 
+							td.main-td.text-md-center(data-title="Заказы") 12
+							td.main-td.text-md-center(data-title="По умолчанию")
+								.form-check.form-switch
+									input.form-check-input(type='checkbox')
+					+tr()
+					+tr() 
 	+footer()
 
 

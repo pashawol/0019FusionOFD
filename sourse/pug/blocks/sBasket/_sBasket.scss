@@ -1,0 +1,116 @@
+
+	// start .sBasket
+	.sBasket {
+		&__polite{
+			max-width: rem(560);
+			font-size: 12px;
+		}
+		--sPT: 0;
+		// --sPB: ;
+		// --sTPB: ;
+		 .form-wrap{
+			 background: #FFFFFF;
+			 padding: rem(18);
+		 }
+		 @include media-breakpoint-up(xl) {
+
+			 &__main-block{
+				 max-width: rem(860);
+				}
+			}
+		 table {
+		 	width: 100%;
+		 }
+		 &__img-wrap{
+			 max-width: rem(83);
+		 }
+		  @include media-breakpoint-up(md){
+
+				--sp: #{rem(33)};
+			}
+		 &__btn-delete{
+			 @extend .text-primary;
+			 @extend .btn;
+			 padding: 0;
+			 .icon{
+				 font-size: rem(38);
+			 }
+		 }
+		 tr{
+			 &:hover  td {
+
+			 	background-color: rgba($color: #BDBDBD, $alpha: .2);
+			 }
+		 }
+		 td {
+			 @include mt;
+		 	// vertical-align: top;
+			 &:nth-child(2){
+				 @include media-breakpoint-up(md){
+
+					 width: (320 /860 * 100%);
+					}
+					&:first-child{
+						padding-left: var(--sp);
+					}
+					&:last-child{
+						padding-right: var(--sp);
+					}
+			 }
+		 	padding: rem(14) rem(28);
+		 	background-color: #fff;
+		 	border-bottom: 20px solid $body-bg;
+
+		 	&:nth-child(1) {
+
+		 		border-top-left-radius: 5px;
+		 		border-bottom-left-radius: 5px;
+		 	}
+
+		 	&:last-child {
+		 		border-top-right-radius: 5px;
+		 		border-bottom-right-radius: 5px;
+		 	} 
+		 }
+
+		 @include media-breakpoint-down(md) {
+
+		 	table,
+		 	tbody {
+		 		display: block;
+		 	}
+
+		 	td {
+		 		display: block;
+		 		border-bottom-width: 1px; 
+				 flex-grow: 1;
+				 &:nth-child(1){
+					 width: auto;
+					 flex: 0 0 auto;
+				 }
+				 &:nth-child(2){
+					 text-align: right;
+					 flex: 1 0 0%;
+				 }
+		 	}
+			 tr{
+				 flex-wrap: wrap;
+				 display: flex;
+			 }
+
+		 	tr {
+		 		margin-bottom: 1rem;
+		 	}
+
+		 }
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sBasket

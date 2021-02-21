@@ -482,9 +482,16 @@ iframe {
 		color: #fff !important;
 	}
 }
-.form-check-input:checked[type=checkbox]{
+.form-check:not(.form-switch) .form-check-input[type=checkbox] {
 	background-size: 80%;
 	background-position: center center;
+}
+.form-check-input[type=radio]{
+	border-color: $primary;
+	&:checked{
+		border-color: $primary;
+	}
+	// background-size: 100%;
 }
 
 .link-back{
@@ -514,3 +521,13 @@ iframe {
 	font-size: 12px;
 }
 
+.form-switch{
+	.form-check-input{
+		&:checked{
+
+			background-color: $form-switch-color;
+		}
+			border-color: transparent;
+		height: rem(24);
+	}
+}
