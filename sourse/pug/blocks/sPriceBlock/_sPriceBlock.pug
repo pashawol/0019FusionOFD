@@ -21,7 +21,7 @@ mixin sPriceBlock(data)
 						mixin radio(t,p, n)
 							.col-auto
 								+b.LABEL.radio-custom
-									input(type="radio" name= n)
+									input(type="radio" name= n)&attributes(attributes)
 									+e.title= t 
 									+e.price= p
 						+e.group
@@ -36,9 +36,11 @@ mixin sPriceBlock(data)
 						+e.group
 							+e.group-title Учёт маркировки для табака, обуви, шуб и&nbsp;лекарств:
 							+e.row.row
-								+radio("12 месяц","1 800 ₽", "n")
-								+radio("12 месяц","1 990 ₽", "n")
-								+radio("39 месяцев","2 900 ₽", "n")
+								+radio("12 месяц","1 800 ₽", "n2")(disabled)
+								+radio("12 месяц","1 990 ₽", "n2")(disabled)
+								+radio("39 месяцев","2 900 ₽", "n2")(disabled)
+								.col-auto.pt-2
+									.text-primary.strong Входит <br> в стоимость ОФД 
 						+e.group
 							+e.group-title Количество
 							.row.align-items-center

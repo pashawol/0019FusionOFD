@@ -10,17 +10,17 @@ mixin sOperators(data)
 			.row
 				- for (var x = 1; x < 10; x++)
 					+e.col.col-lg-4.col-md-6
-						+e.item
-							+e.img-wrap
+						+e.item(href="#")
+							+e.DIV.img-wrap
 								+pic(`operator-${x}.png`,'',0)
-							+e.foot.row
-								+e.td.col-4
-									+e.text 12 месяцев
-									+e.price 1 290 ₽
-								+e.td.col-4
-									+e.text 15 месяцев
-									+e.price 1 490 ₽
-								+e.td.col-4
+							+e.DIV.foot.row
+								+e.DIV.td.col
+									+e.DIV.text 12 месяцев
+									+e.DIV.price 1 290 ₽
+								+e.DIV.td.col
+									+e.DIV.text 15 месяцев
+									+e.DIV.price 1 490 ₽
+								+e.DIV.td.col
 									+e.text 36 месяцев
 									+e.price 2 890 ₽
 	// end sOperators
