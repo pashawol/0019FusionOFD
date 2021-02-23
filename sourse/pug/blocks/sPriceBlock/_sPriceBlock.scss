@@ -144,6 +144,14 @@
 	input:checked  ~ &__price{
 		color: #5D7AFF;
 	}
+	input:disabled{
+		pointer-events: none;
+		opacity: 0.2;
+	}
+	input:disabled~&__title,
+	input:disabled~&__price {
+		opacity: 0.2;
+	}
 }
 
 .block-add{
