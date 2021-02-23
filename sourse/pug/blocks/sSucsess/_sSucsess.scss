@@ -1,0 +1,52 @@
+
+	// start .sSucsess
+	.sSucsess {
+		--sPT: 34px;
+		// --sPB: ;
+		// --sTPB: ;
+
+		@include media-breakpoint-down(lg) {
+			--sPT: 15px;
+		}
+
+		&__title {
+			font-weight: bold;
+			font-size: rem(30);
+			line-height: calc(38 / 30);
+			color: $blue;			
+			margin-bottom: rem(20);
+		}
+		&__text {
+			max-width: rem(350);
+			font-weight: 500;
+			font-size: rem(16);
+			line-height: calc(26 / 16);
+			margin-bottom: rem(45);
+			@include media-breakpoint-down(lg) {
+				margin-bottom: rem(30);
+			}
+		}
+		&__btn {
+			@extend .btn;
+			max-width: rem(225);
+			height: rem(60);
+			margin-bottom: 1rem;
+			border-radius: 5px;
+			padding: rem(8);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: rem(30);
+		}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sSucsess
