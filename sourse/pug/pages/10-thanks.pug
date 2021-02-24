@@ -8,12 +8,13 @@ include ../blocks/sWhy/_sWhy.pug
 include ../blocks/sPriceBlock/_sPriceBlock.pug
 include ../blocks/sConnecting/_sConnecting.pug
 include ../blocks/sCabinet/_sCabinet.pug
+include ../blocks/sSucsess/_sSucsess.pug
 
 block variables
 	- let  mainPage= null
 	- let  bg= '03.jpg'
 block title
-	- let  title= 'Личный кабинет'
+	- let  title= 'Заказ №567889'
 	title= title
 block pagecontent
 
@@ -26,27 +27,8 @@ block pagecontent
 	+b.page-head
 		.container
 			.row.g-4
-				.col-auto.pt-2
-					a.link-back(href="#")
-						+icon("arrow-left")
 				.col
 					h1.strong= title
-	+sCabinet
-		+b.cabinet-menu
-			.row.row--null
-				.col-sm-4
-					+e.A.item(href='#')
-						+e.img-wrap
-							img(src="img/svg/shopping-bag.svg", alt="")
-						+e.title Заказы
-				.col-sm-4
-					+e.A.item.bordered(href='#')
-						+e.img-wrap
-							img(src="img/svg/profile.svg", alt="")
-						+e.title Контрагенты
-				.col-sm-4
-					+e.A.item(href='#')
-						+e.img-wrap
-							img(src="img/svg/help.svg", alt="")
-						+e.title Обращения
+	+sSucsess
+	
 	+footer()
