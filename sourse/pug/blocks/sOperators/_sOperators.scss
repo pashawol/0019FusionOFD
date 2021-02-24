@@ -1,6 +1,11 @@
 
 	// start .sOperators
 	.sOperators {
+		&__old-price{
+			font-size: 12px;
+			text-decoration: line-through;
+		}
+
 		// --sPT: ;
 		@include media-breakpoint-up(sm){
 
@@ -95,6 +100,9 @@
 		&__price{
 			font-weight: bold;
 			@extend .h6;
+			&--new{
+				color: #2BB398;
+			}
 		}
 		 
 	@include media-breakpoint-up(xl) {}
