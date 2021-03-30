@@ -39,11 +39,27 @@
 		align-items: center;
 		@extend .btn;
 		@extend .btn-outline-primary;
+		position: relative;
 		padding: 0;
 		.icon{
 			font-size: rem(22);
 
 		}
+	}
+	&__basket-count{
+		position: absolute;
+		right: 0;
+		top: 0;
+		border-radius: 50%;
+		width: rem(16);
+		height: rem(16);
+		background-color: $danger;
+		color: #fff 	!important;
+		font-size: rem(10);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 1.4;
 	}
 	// 
 	@include media-breakpoint-up(xl) {}

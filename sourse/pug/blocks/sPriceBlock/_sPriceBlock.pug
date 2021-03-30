@@ -13,7 +13,7 @@ mixin sPriceBlock(data)
 
 						p Оператор фискальных данных, сокращенно ОФД, принимает чеки с кассы и отправляет их в налоговую. Код активации запускает эту услугу.
 						p: a(href="#") Как активировать код?
-					.col
+					+e.col-right.col
 
 						+b.section-title
 							h1 Код активации Платформа ОФД
@@ -41,7 +41,7 @@ mixin sPriceBlock(data)
 								+radio("39 месяцев","2 900 ₽", "n2")(disabled)
 								.col-auto.pt-2
 									.text-primary.strong Входит <br> в стоимость ОФД 
-						+e.group
+						+e.group--footer
 							+e.group-title Количество
 							.row.align-items-center
 								.col
