@@ -1,0 +1,37 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sOperators/_sOperators.pug
+include ../blocks/sWhy/_sWhy.pug
+include ../blocks/sPriceBlock/_sPriceBlock.pug
+include ../blocks/sConnecting/_sConnecting.pug
+include ../blocks/sBasket/_sBasket.pug
+
+block variables
+	- let  mainPage= null
+	- let  bg= null
+block title
+	- let  title= 'Контакты'
+	title= title
+block pagecontent
+
+	+mob-mnu()
+	header.header
+		+top-nav()
+	//- +headerBlock()
+	//- +sPriceBlock
+	//- +sConnecting
+	+b.page-head--lg
+		.container
+			.row.g-4
+				.col
+					h1.strong= title
+	+sContact
+	+sForm()
+	+sContent
+	+footer()
+
+
+	

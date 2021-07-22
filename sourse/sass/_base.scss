@@ -515,6 +515,12 @@ iframe {
 	h1{
 		@include rfs(30px);
 	}
+	&--lg{
+		h1{
+			@include rfs(60px);
+		}
+		
+	}
 }
 
 .smallest{

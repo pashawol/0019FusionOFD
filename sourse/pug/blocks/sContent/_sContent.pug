@@ -1,9 +1,15 @@
 mixin sContent()
 	// start sContent
-	+b.SECTION.sContent.section#sContent&attributes(attributes)
+	+b.sContent.section#sContent&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContent
-				
 			.row
+				.col
+					h1.strong О нас
+					p Мы группа компаний, работающая на рынке с 2013 года, за нашими плечами сотни автоматизированных точек продаж, мы занимаемся поставкой оборудования и автоматизацией кафе, баров, ресторанов, магазинов.
+
+					p Мы создали продукта для малого и среднего бизнеса с использованием самых современных технологий, которые позволяют снизить в 10 раз стоимость затрат на внедрение системы автоматизации для ресторанов, магазинов, баров, кафе.
+
+					p И теперь Мы готовы представить вам наш интернет магазин POS оборудования, где вы сможете сравнить и выбрать для себя действительно то, что вам нужно и по хорошей цене. 
+				.col-xl-auto.col-lg-4.align-self-center.text-center
+					img(src="img/svg/about-img.svg" loading="lazy", alt="", class="res-i")
 	// end sContent

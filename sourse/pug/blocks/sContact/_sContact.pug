@@ -2,8 +2,23 @@ mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContact
-				
 			.row
+				+e.col.col-xl-4.col-md-auto 
+					+e.group
+						+e.title
+							a(href="F-POS.RU") F-POS.RU
+						+e.text.strong ООО "Ф-Трейд" ИНН 6163208662
+							br
+							| Индекс 344006 г. Ростов-на-Дону, пр. Ворошиловский д.2 /2 5 этаж офис. №60
+					+e.group
+						+e.text Телефон/факс:
+						+e.title
+							a.text-body(href="tel:+78633033843") +7 863 303-38-43 
+					+e.group
+						+e.text Телефон/факс:
+						+e.text.strong По будням С 10-00 до 19-00
+					
+				.col
+					+e.map
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.9574897820767!2d39.72005521561699!3d47.21741407916079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b97244206a85%3A0xa808ea656567f0f7!2z0JLQvtGA0L7RiNC40LvQvtCy0YHQutC40Lkg0L_RgC4sIDIsIDUg0Y3RgtCw0LYsINCg0L7RgdGC0L7Qsi3QvdCwLdCU0L7QvdGDLCDQoNC-0YHRgtC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDM0NDAwMg!5e0!3m2!1sru!2sby!4v1626964716568!5m2!1sru!2sby" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	// end sContact
